@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <script type="text/javascript" src="/bundle.js"></script>
+
+    <link href="/css/module/login/register.css" rel="stylesheet">
+    <script src="/js/module/login/register.js"></script>
+
+</head>
+<body>
+<div id="div_main" class="container" >
+    <h1 id="title">Register</h1>
+    <form id="register_form" class="col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4" role="form" >
+    <div id="registerFailInfo" style="color: red;font-size: 15px; line-height: 20px;margin-bottom: 5px;"></div>
+
+    <div class="form-group">
+        <input type="text" class="form-control inlineBlock width-90" name="nickname" id="nickname" placeholder="昵称"  required />
+        <span class="fa fa-asterisk red small"></span>
+    </div>
+
+    <div class="form-group">
+        <input type="text" class="form-control inlineBlock width-90" name="username" id="username" placeholder="用户名" required />
+        <span class="fa fa-asterisk red small">&nbsp;</span>
+        <span class="fa fa-check-circle gray" id="usernamePass"></span>
+    </div>
+
+    <div class="form-group">
+        <input type="password" class="form-control inlineBlock width-90" name="password" id="password" placeholder="密码" required/>
+        <span class="fa fa-asterisk red small">&nbsp;</span>
+        <span class="fa fa-check-circle gray" id="passwordPass"></span>
+    </div>
+
+    <div class="form-group">
+        <input type="password" class="form-control inlineBlock width-90" name="passwordConfirm" id="passwordConfirm" placeholder="确认密码" required/>
+        <span class="fa fa-asterisk red small">&nbsp;</span>
+        <span class="fa fa-check-circle gray" id="passwordConfirmPass"></span>
+    </div>
+
+    <div class="form-group">
+        <input type="email" class="form-control inlineBlock width-90" name="email" id="email" placeholder="邮箱"  required />
+        <span class="fa fa-asterisk red small"> </span>
+    </div>
+
+    <div class="form-group">
+        <input type="text" class="form-control inlineBlock width-90" name="phone" id="phone" placeholder="手机号码" />
+    </div>
+
+    <div class="form-group noMargin width-90">
+        <button type="submit" id="btn_register" class="btn btn-primary width-50">注册</button>
+        <a href="login.html" class="right" style="display:inline-block; padding-top: 15px;">已有账号，去登录</a>
+    </div>
+    </form>
+</div>
+
+</body>
+</html>

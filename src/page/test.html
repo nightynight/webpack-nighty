@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>layui在线调试</title>
+
+    <script type="text/javascript" src="/bundle.js"></script>
+</head>
+<body>
+
+<script>
+    layer.ready(function(){
+        layer.open({
+            type: 2,
+            title: '欢迎页',
+            maxmin: true,
+            area: ['800px', '500px'],
+            content: 'http://layer.layui.com/test/welcome.html',
+            end: function(){
+                layer.tips('Hi', '#about', {tips: 1})
+            }
+        });
+    });
+</script>
+</body>
+</html>
